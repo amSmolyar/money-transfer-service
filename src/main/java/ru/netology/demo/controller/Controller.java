@@ -3,15 +3,11 @@ package ru.netology.demo.controller;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import ru.netology.demo.card.Card;
+import ru.netology.demo.requestObjects.ConfirmParameters;
 import ru.netology.demo.requestObjects.TransferParameters;
+import ru.netology.demo.responseObjects.ConfirmResponse;
 import ru.netology.demo.service.Service;
 
-import javax.validation.Valid;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
 
 @RestController
 @Validated
@@ -22,21 +18,18 @@ public class Controller {
         this.service = service;
     }
 
+    @CrossOrigin
     @PostMapping("/transfer")
-    public ResponseEntity<Card> getFromCard(@RequestBody TransferParameters parameters) {
-        Card card = service.getFromCard(parameters);
-        return ResponseEntity.ok(card);
+    public ResponseEntity<ConfirmResponse> requestTransfer(@RequestBody TransferParameters parameters) {
+        ConfirmResponse operationId = new ConfirmResponse(service.requestTransfer(parameters));
+        return ResponseEntity.ok(operationId);
     }
 
-    //@PostMapping("/transfer")
-    //public Card getFromCard(@Valid @TransferDeserializer TransferParameters parameters) {
-     //   return service.getFromCard(parameters);
-    //}
+    @CrossOrigin
+    @PostMapping("/confirmOperation")
+    public ResponseEntity<ConfirmResponse> confirmTransfer(@RequestBody ConfirmParameters parameters) {
+        ConfirmResponse operationId = new ConfirmResponse(service.confirmOperation(parameters));
+        return ResponseEntity.ok(operationId);
+    }
 
-
-    //@Retention(RetentionPolicy.RUNTIME)
-   // @Target(ElementType.PARAMETER)
-    //public @interface TransferDeserializer {
-//
-    //}
 }

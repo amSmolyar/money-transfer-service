@@ -3,12 +3,12 @@ Content-Type: application/json
 
 {
   "cardFromNumber": "1234567890123456",
-  "cardFromValidTill": "0222",
+  "cardFromValidTill": "03/22",
   "cardFromCVV": "123",
   "cardToNumber": "2345678901234567",
   "amount": {
     "value": 100,
-    "currency": "rub"
+    "currency": "RUR"
   }
 }
 

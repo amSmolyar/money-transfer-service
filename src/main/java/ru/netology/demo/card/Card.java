@@ -3,13 +3,19 @@ package ru.netology.demo.card;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
 import java.util.Objects;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Card {
-    private String number;
-    private String validTill;
-    private String cvv;
-    private String currency;
+    private final String number;
+    private final String validTill;
+    private final String cvv;
+    private final String currency;
     private int balance;
+
+    private static Lock lock;
+    private static Condition condition;
 
     @JsonCreator
     public Card(String number, String validTill, String cvv, String currency, int balance) {
@@ -18,48 +24,49 @@ public class Card {
         this.cvv = cvv;
         this.currency = currency;
         this.balance = balance;
+
+        lock = new ReentrantLock(true);
+        condition = lock.newCondition();
     }
 
     public String getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
     public String getValidTill() {
         return validTill;
-    }
-
-    public void setValidTill(String validTill) {
-        this.validTill = validTill;
     }
 
     public String getCvv() {
         return cvv;
     }
 
-    public void setCvv(String cvv) {
-        this.cvv = cvv;
-    }
-
     public String getCurrency() {
         return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
     }
 
     public int getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void chargeMoney(int amount) {
+        lock.lock();
+        this.balance = this.balance + amount;
+        condition.signalAll();
+        lock.unlock();
     }
 
+    public boolean offMoney(int amount) {
+        lock.lock();
+        boolean res = false;
+        if (this.balance >= amount) {
+            this.balance = this.balance - amount;
+            res = true;
+        }
+        condition.signalAll();
+        lock.unlock();
+        return res;
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -9,15 +9,24 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CardBase {
     private ConcurrentHashMap<String, Card> cardMap;
     private CardFileParam cardFile;
 
+    private DateFormat dateFormat;
+    private Date date;
+
     public CardBase() {
         cardMap = new ConcurrentHashMap<>();
         cardFile = new CardFileParam();
+
+        this.dateFormat = new SimpleDateFormat("MM/yy");
+        this.date = new Date();
         readCardBaseFile();
     }
 
@@ -48,9 +57,9 @@ public class CardBase {
                 else
                     throw new RuntimeException("Неправильный формат записи данных в файле" + filename);
 
-                if (parts[1].trim().matches("(\\d{4})"))
-                    validTill = parts[1].trim();
-                else
+                if (parts[1].trim().matches("(\\d{2})(\\/)(\\d{2})")) {
+                    validTill = checkTillData(parts[1].trim(), dateFormat.format(date));
+                } else
                     throw new RuntimeException("Неправильный формат записи данных в файле" + filename);
 
                 if (parts[2].trim().matches("(\\d{3})"))
@@ -58,7 +67,7 @@ public class CardBase {
                 else
                     throw new RuntimeException("Неправильный формат записи данных в файле" + filename);
 
-                if (parts[3].trim().equals("rub"))
+                if (parts[3].trim().equalsIgnoreCase("RUR"))
                     currency = parts[3].trim();
                 else
                     throw new RuntimeException("Сервис поддерживает только переводы в рублях");
@@ -73,6 +82,25 @@ public class CardBase {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    private String checkTillData(String tillData, String currentData) {
+        String[] validTillParts = tillData.split("/");
+        String[] currentDataParts = currentData.split("/");
+
+        if (Integer.parseInt(validTillParts[0]) > 12)
+            throw new RuntimeException("Неправильный формат записи даты");
+
+        int tillMonth = Integer.parseInt(validTillParts[0]);
+        int currentMonth = Integer.parseInt(currentDataParts[0]);
+
+        int tillYear = Integer.parseInt(validTillParts[1]);
+        int currentYear = Integer.parseInt(currentDataParts[1]);
+
+        if ((tillYear > currentYear) || ((tillYear == currentYear) && (tillMonth >= currentMonth)))
+            return tillData;
+        else
+            throw new RuntimeException("Неправильный формат записи даты");
     }
 
     public ConcurrentHashMap<String, Card> getCardMap() {
