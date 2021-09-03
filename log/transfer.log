@@ -1,0 +1,36 @@
+03-09-2021 18:06:33 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 22388 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+
+03-09-2021 18:06:33 - No active profile set, falling back to default profiles: default
+
+03-09-2021 18:06:34 - Tomcat initialized with port(s): 5500 (http)
+
+03-09-2021 18:06:34 - Starting service [Tomcat]
+
+03-09-2021 18:06:34 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+
+03-09-2021 18:06:34 - Initializing Spring embedded WebApplicationContext
+
+03-09-2021 18:06:34 - Root WebApplicationContext: initialization completed in 1060 ms
+
+03-09-2021 18:06:35 - Tomcat started on port(s): 5500 (http) with context path ''
+
+03-09-2021 18:06:35 - Started DemoApplication in 2.153 seconds (JVM running for 3.331)
+
+03-09-2021 18:06:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+03-09-2021 18:06:53 - Initializing Servlet 'dispatcherServlet'
+
+03-09-2021 18:06:53 - Completed initialization in 2 ms
+
+03-09-2021 18:06:53 - Client wants to transfer 1000 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+
+03-09-2021 18:06:58 - Confirmation is required for transfer 1000 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+
+03-09-2021 18:06:59 - Received confirmation of transfer for operationId = 1, confirmation code = 0000
+
+03-09-2021 18:06:59 - The operation of transfer 1000 RUR from card number 1234567890123456 to card number 2345678901234567 was successfully completed
+
+03-09-2021 18:50:30 - Client wants to transfer 10000 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+
+03-09-2021 18:50:41 - there are not enough funds on the card 1234567890123456 for transfer
+

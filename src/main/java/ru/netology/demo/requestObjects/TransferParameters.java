@@ -57,4 +57,12 @@ public class TransferParameters {
     public void setAmount(Amount amount) {
         this.amount = amount;
     }
+
+    @Override
+    public String toString() {
+        return amount.getValue() + " " + amount.getCurrency() +
+                " from card {" + cardFromNumber + ", " +
+                cardFromValidTill + ", " + cardFromCVV + "}" +
+                " to card number " + cardToNumber;
+    }
 }

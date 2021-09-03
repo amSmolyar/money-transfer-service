@@ -24,4 +24,10 @@ public class ConfirmParameters {
     public void setCode(String code) {
         this.code = code;
     }
+
+    @Override
+    public String toString() {
+        return  "operationId = " + operationId + ", " +
+                "confirmation code = " + code;
+    }
 }

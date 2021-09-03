@@ -14,30 +14,35 @@ public class ExceptionControllerAdvice {
     @ExceptionHandler(CardNotFoundException.class)
     public ResponseEntity<ExceptionResponse> handlerCardNotFound(CardNotFoundException e) {
         ExceptionResponse resp = new ExceptionResponse(e.getMessage(), e.getId());
+        LoggerController.getLogger().info(e.getMessage());
         return new ResponseEntity<>(resp, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(CurrencyMismatchException.class)
     public ResponseEntity<ExceptionResponse> handlerCurrencyMismatch(CurrencyMismatchException e) {
         ExceptionResponse resp = new ExceptionResponse(e.getMessage(), e.getId());
+        LoggerController.getLogger().info(e.getMessage());
         return new ResponseEntity<>(resp, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(FailedOperationException.class)
     public ResponseEntity<ExceptionResponse> handlerFailedOperation(FailedOperationException e) {
         ExceptionResponse resp = new ExceptionResponse(e.getMessage(), e.getId());
+        LoggerController.getLogger().info(e.getMessage());
         return new ResponseEntity<>(resp, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(InsufficientFundsException.class)
     public ResponseEntity<ExceptionResponse> handlerInsufficientFunds(InsufficientFundsException e) {
         ExceptionResponse resp = new ExceptionResponse(e.getMessage(), e.getId());
+        LoggerController.getLogger().info(e.getMessage());
         return new ResponseEntity<>(resp, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<ExceptionResponse> handlerRuntime(RuntimeException e) {
         ExceptionResponse resp = new ExceptionResponse(e.getMessage(), RUNTIME_EXCEPTION_ID);
+        LoggerController.getLogger().info(e.getMessage());
         return new ResponseEntity<>(resp, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
