@@ -8,6 +8,8 @@ import ru.netology.demo.requestObjects.TransferParameters;
 import ru.netology.demo.responseObjects.ConfirmResponse;
 import ru.netology.demo.service.Service;
 
+import javax.validation.Valid;
+
 
 @RestController
 @Validated
@@ -20,7 +22,7 @@ public class Controller {
 
     @CrossOrigin
     @PostMapping("/transfer")
-    public ResponseEntity<ConfirmResponse> requestTransfer(@RequestBody TransferParameters parameters) {
+    public ResponseEntity<ConfirmResponse> requestTransfer(@Valid @RequestBody TransferParameters parameters) {
         LoggerController.getLogger().info("Client wants to transfer " + parameters.toString());
         ConfirmResponse operationId = new ConfirmResponse(service.requestTransfer(parameters));
         LoggerController.getLogger().info("Confirmation is required for transfer " + parameters.toString() + ". OperationId = " + operationId.getOperationId());
@@ -29,7 +31,7 @@ public class Controller {
 
     @CrossOrigin
     @PostMapping("/confirmOperation")
-    public ResponseEntity<ConfirmResponse> confirmTransfer(@RequestBody ConfirmParameters parameters) {
+    public ResponseEntity<ConfirmResponse> confirmTransfer(@Valid @RequestBody ConfirmParameters parameters) {
         LoggerController.getLogger().info("Received confirmation of transfer for " + parameters.toString());
         ConfirmResponse operationId = new ConfirmResponse(service.confirmOperation(parameters));
         return ResponseEntity.ok(operationId);

@@ -2,16 +2,26 @@ package ru.netology.demo.card;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+import javax.validation.constraints.Pattern;
 import java.util.Objects;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Card {
+    @Pattern(regexp = "(\\d{16})")
     private final String number;
+
+    @Pattern(regexp = "(\\d{2})(\\/)(\\d{2})")
     private final String validTill;
+
+    @Pattern(regexp = "(\\d{3})")
     private final String cvv;
+
+    @Pattern(regexp = "RUR")
     private final String currency;
+
+    @Pattern(regexp = "(\\d+)")
     private int balance;
 
     private static Lock lock;

@@ -1,16 +1,30 @@
 package ru.netology.demo.requestObjects;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
+
+@Validated
 public class TransferParameters {
+    @Pattern(regexp = "(\\d{16})")
     private String cardFromNumber;
+
+    @Pattern(regexp = "(\\d{2})(\\/)(\\d{2})")
     private String cardFromValidTill;
+
+    @Pattern(regexp = "(\\d{3})")
     private String cardFromCVV;
+
+    @Pattern(regexp = "(\\d{16})")
     private String cardToNumber;
+
+    @Valid
     private Amount amount;
 
     @JsonCreator
-    public TransferParameters(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, Amount amount) {
+    public TransferParameters(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, @Valid Amount amount) {
         this.cardFromNumber = cardFromNumber;
         this.cardFromValidTill = cardFromValidTill;
         this.cardFromCVV = cardFromCVV;
