@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  transferapp:
+    image: transferapp:latest
+    build: .
+    ports:
+      - 5500:5500
