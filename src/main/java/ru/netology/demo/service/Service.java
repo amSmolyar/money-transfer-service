@@ -37,7 +37,7 @@ public class Service {
         return operationId;
     }
 
-    private String checkCardFrom(TransferParameters parameters) {
+    public String checkCardFrom(TransferParameters parameters) {
         // Существует ли в базе карта from:
         Card cardFromRepo = repository.getCard(parameters.getCardFromNumber())
                 .orElseThrow(() -> new CardNotFoundException("there is no card with number " + parameters.getCardFromNumber() + " in the database"));
@@ -57,7 +57,7 @@ public class Service {
         return cardFromRepo.getNumber();
     }
 
-    private String checkCardTo(TransferParameters parameters) {
+    public String checkCardTo(TransferParameters parameters) {
         // Существует ли в базе карта to:
         Card cardToRepo = repository.getCard(parameters.getCardToNumber())
                 .orElseThrow(() -> new CardNotFoundException("there is no card with number " + parameters.getCardToNumber() + " in the database"));
@@ -83,5 +83,13 @@ public class Service {
 
         LoggerController.getLogger().info("The operation of transfer " + operation.toString() + " was successfully completed");
         return parameters.getOperationId();
+    }
+
+    public AtomicInteger getOperationIdInt() {
+        return operationIdInt;
+    }
+
+    public ConcurrentHashMap<String, Transaction> getOperationMap() {
+        return operationMap;
     }
 }

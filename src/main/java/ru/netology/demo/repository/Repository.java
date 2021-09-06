@@ -18,13 +18,20 @@ public class Repository {
         return (cardMap.containsKey(number)) ? Optional.of(cardMap.get(number)) : Optional.empty();
     }
 
-    public void chargeMoney(String cardNumber, int amount) {
+    public boolean chargeMoney(String cardNumber, int amount) {
+        if (!cardMap.containsKey(cardNumber) || (amount <= 0))
+            return false;
+
         Card card = cardMap.get(cardNumber);
         card.chargeMoney(amount);
         cardMap.put(cardNumber,card);
+        return true;
     }
 
     public boolean offMoney(String cardNumber, int amount) {
+        if (!cardMap.containsKey(cardNumber))
+            return false;
+
         Card card = cardMap.get(cardNumber);
         if (!card.offMoney(amount))
             return false;
@@ -33,4 +40,7 @@ public class Repository {
         return true;
     }
 
+    public ConcurrentHashMap<String, Card> getCardMap() {
+        return cardMap;
+    }
 }

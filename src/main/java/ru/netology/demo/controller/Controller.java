@@ -26,6 +26,7 @@ public class Controller {
         LoggerController.getLogger().info("Client wants to transfer " + parameters.toString());
         ConfirmResponse operationId = new ConfirmResponse(service.requestTransfer(parameters));
         LoggerController.getLogger().info("Confirmation is required for transfer " + parameters.toString() + ". OperationId = " + operationId.getOperationId());
+
         return ResponseEntity.ok(operationId);
     }
 

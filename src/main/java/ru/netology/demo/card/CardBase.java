@@ -1,8 +1,6 @@
 package ru.netology.demo.card;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+import ru.netology.demo.card.Card;
 import ru.netology.demo.config.CardFileParam;
 
 import java.io.BufferedReader;
@@ -67,7 +65,7 @@ public class CardBase {
                 else
                     throw new RuntimeException("Неправильный формат записи данных в файле" + filename);
 
-                if (parts[3].trim().equalsIgnoreCase("RUR"))
+                if (parts[3].trim().equals("RUR"))
                     currency = parts[3].trim();
                 else
                     throw new RuntimeException("Сервис поддерживает только переводы в рублях");

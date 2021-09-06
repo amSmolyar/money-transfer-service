@@ -1,686 +1,790 @@
-03-09-2021 18:06:33 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 22388 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:02:42 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 19300 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 18:06:33 - No active profile set, falling back to default profiles: default
+07-09-2021 00:02:42 - No active profile set, falling back to default profiles: default
 
-03-09-2021 18:06:34 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:02:43 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 18:06:34 - Starting service [Tomcat]
+07-09-2021 00:02:43 - Starting service [Tomcat]
 
-03-09-2021 18:06:34 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:02:43 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 18:06:34 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:02:43 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 18:06:34 - Root WebApplicationContext: initialization completed in 1060 ms
+07-09-2021 00:02:43 - Root WebApplicationContext: initialization completed in 1708 ms
 
-03-09-2021 18:06:35 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:02:44 - Tomcat started on port(s): 51519 (http) with context path ''
 
-03-09-2021 18:06:35 - Started DemoApplication in 2.153 seconds (JVM running for 3.331)
+07-09-2021 00:02:44 - Started DemoApplicationTests in 3.218 seconds (JVM running for 15.377)
 
-03-09-2021 18:06:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 00:05:59 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 2224 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 18:06:53 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 00:05:59 - No active profile set, falling back to default profiles: default
 
-03-09-2021 18:06:53 - Completed initialization in 2 ms
+07-09-2021 00:06:01 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 18:06:53 - Client wants to transfer 1000 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 00:06:01 - Starting service [Tomcat]
 
-03-09-2021 18:06:58 - Confirmation is required for transfer 1000 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 00:06:01 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 18:06:59 - Received confirmation of transfer for operationId = 1, confirmation code = 0000
+07-09-2021 00:06:02 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 18:06:59 - The operation of transfer 1000 RUR from card number 1234567890123456 to card number 2345678901234567 was successfully completed
+07-09-2021 00:06:02 - Root WebApplicationContext: initialization completed in 2216 ms
 
-03-09-2021 18:50:30 - Client wants to transfer 10000 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 00:06:03 - Tomcat started on port(s): 60360 (http) with context path ''
 
-03-09-2021 18:50:41 - there are not enough funds on the card 1234567890123456 for transfer
+07-09-2021 00:06:03 - Started DemoApplicationTests in 4.058 seconds (JVM running for 16.861)
 
-03-09-2021 19:43:43 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 2828 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:07:31 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 29580 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 19:43:43 - No active profile set, falling back to default profiles: default
+07-09-2021 00:07:31 - No active profile set, falling back to default profiles: default
 
-03-09-2021 19:43:45 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:07:32 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 19:43:45 - Starting service [Tomcat]
+07-09-2021 00:07:32 - Starting service [Tomcat]
 
-03-09-2021 19:43:45 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:07:32 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 19:43:45 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:07:33 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 19:43:45 - Root WebApplicationContext: initialization completed in 1460 ms
+07-09-2021 00:07:33 - Root WebApplicationContext: initialization completed in 1758 ms
 
-03-09-2021 19:43:45 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:07:34 - Tomcat started on port(s): 57939 (http) with context path ''
 
-03-09-2021 19:43:45 - Started DemoApplication in 2.616 seconds (JVM running for 3.731)
+07-09-2021 00:07:34 - Started DemoApplicationTests in 3.27 seconds (JVM running for 13.436)
 
-03-09-2021 19:45:48 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 24248 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:15:32 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 17852 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 19:45:48 - No active profile set, falling back to default profiles: default
+07-09-2021 00:15:32 - No active profile set, falling back to default profiles: default
 
-03-09-2021 19:45:49 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:15:33 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 19:45:49 - Starting service [Tomcat]
+07-09-2021 00:15:33 - Starting service [Tomcat]
 
-03-09-2021 19:45:49 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:15:33 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 19:45:49 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:15:34 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 19:45:49 - Root WebApplicationContext: initialization completed in 1017 ms
+07-09-2021 00:15:34 - Root WebApplicationContext: initialization completed in 2011 ms
 
-03-09-2021 19:45:49 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:15:35 - Tomcat started on port(s): 52717 (http) with context path ''
 
-03-09-2021 19:45:49 - Started DemoApplication in 2.104 seconds (JVM running for 3.268)
+07-09-2021 00:15:35 - Started DemoApplicationTests in 3.883 seconds (JVM running for 18.402)
 
-03-09-2021 20:00:22 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 8572 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:21:35 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 22988 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:00:22 - No active profile set, falling back to default profiles: default
+07-09-2021 00:21:35 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:00:23 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:21:36 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:00:23 - Starting service [Tomcat]
+07-09-2021 00:21:36 - Starting service [Tomcat]
 
-03-09-2021 20:00:23 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:21:36 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:00:23 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:21:36 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:00:23 - Root WebApplicationContext: initialization completed in 993 ms
+07-09-2021 00:21:36 - Root WebApplicationContext: initialization completed in 1753 ms
 
-03-09-2021 20:00:24 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:21:37 - Tomcat started on port(s): 54245 (http) with context path ''
 
-03-09-2021 20:00:24 - Started DemoApplication in 2.051 seconds (JVM running for 3.346)
+07-09-2021 00:21:37 - Started DemoApplicationTests in 3.369 seconds (JVM running for 15.648)
 
-03-09-2021 20:01:49 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 22548 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:32:20 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 31944 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:01:49 - No active profile set, falling back to default profiles: default
+07-09-2021 00:32:20 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:01:50 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:32:22 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:01:50 - Starting service [Tomcat]
+07-09-2021 00:32:22 - Starting service [Tomcat]
 
-03-09-2021 20:01:50 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:32:22 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:01:50 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:32:23 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:01:50 - Root WebApplicationContext: initialization completed in 1074 ms
+07-09-2021 00:32:23 - Root WebApplicationContext: initialization completed in 2077 ms
 
-03-09-2021 20:01:50 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:32:24 - Tomcat started on port(s): 50992 (http) with context path ''
 
-03-09-2021 20:01:50 - Started DemoApplication in 2.163 seconds (JVM running for 3.47)
+07-09-2021 00:32:24 - Started DemoApplicationTests in 3.873 seconds (JVM running for 18.226)
 
-03-09-2021 20:13:26 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 30512 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:34:49 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 21840 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:13:26 - No active profile set, falling back to default profiles: default
+07-09-2021 00:34:49 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:13:27 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:34:51 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:13:27 - Starting service [Tomcat]
+07-09-2021 00:34:51 - Starting service [Tomcat]
 
-03-09-2021 20:13:27 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:34:51 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:13:27 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:34:51 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:13:27 - Root WebApplicationContext: initialization completed in 1048 ms
+07-09-2021 00:34:51 - Root WebApplicationContext: initialization completed in 2096 ms
 
-03-09-2021 20:13:28 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:34:52 - Tomcat started on port(s): 54800 (http) with context path ''
 
-03-09-2021 20:13:28 - Started DemoApplication in 2.18 seconds (JVM running for 3.387)
+07-09-2021 00:34:52 - Started DemoApplicationTests in 3.74 seconds (JVM running for 17.719)
 
-03-09-2021 20:14:00 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 25996 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:39:12 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 24640 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:14:00 - No active profile set, falling back to default profiles: default
+07-09-2021 00:39:12 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:14:01 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:39:14 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:14:01 - Starting service [Tomcat]
+07-09-2021 00:39:14 - Starting service [Tomcat]
 
-03-09-2021 20:14:01 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:39:14 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:14:01 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:39:14 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:14:01 - Root WebApplicationContext: initialization completed in 999 ms
+07-09-2021 00:39:14 - Root WebApplicationContext: initialization completed in 2135 ms
 
-03-09-2021 20:15:41 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:39:15 - Tomcat started on port(s): 59572 (http) with context path ''
 
-03-09-2021 20:15:41 - Started DemoApplication in 101.486 seconds (JVM running for 102.748)
+07-09-2021 00:39:15 - Started DemoApplicationTests in 3.977 seconds (JVM running for 17.527)
 
-03-09-2021 20:15:48 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 30068 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:39:29 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:15:48 - No active profile set, falling back to default profiles: default
+07-09-2021 00:42:57 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:15:49 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:42:57 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:15:49 - Starting service [Tomcat]
+07-09-2021 00:43:18 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 1208 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:15:49 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:43:18 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:15:49 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:43:20 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:15:49 - Root WebApplicationContext: initialization completed in 1017 ms
+07-09-2021 00:43:20 - Starting service [Tomcat]
 
-03-09-2021 20:16:44 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:43:20 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:16:44 - Started DemoApplication in 57.006 seconds (JVM running for 58.235)
+07-09-2021 00:43:20 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:16:52 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 25072 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:43:20 - Root WebApplicationContext: initialization completed in 2072 ms
 
-03-09-2021 20:16:52 - No active profile set, falling back to default profiles: default
+07-09-2021 00:43:21 - Tomcat started on port(s): 65071 (http) with context path ''
 
-03-09-2021 20:16:53 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:43:21 - Started DemoApplicationTests in 3.763 seconds (JVM running for 17.527)
 
-03-09-2021 20:16:53 - Starting service [Tomcat]
+07-09-2021 00:43:22 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:16:53 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:43:22 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:16:53 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:43:55 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:16:53 - Root WebApplicationContext: initialization completed in 989 ms
+07-09-2021 00:54:12 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 17284 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:35:04 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:54:12 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:35:04 - Started DemoApplication in 1093.211 seconds (JVM running for 1094.401)
+07-09-2021 00:54:14 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:35:12 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 2052 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:54:14 - Starting service [Tomcat]
 
-03-09-2021 20:35:12 - No active profile set, falling back to default profiles: default
+07-09-2021 00:54:14 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:35:13 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:54:14 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:35:13 - Starting service [Tomcat]
+07-09-2021 00:54:14 - Root WebApplicationContext: initialization completed in 2250 ms
 
-03-09-2021 20:35:13 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:54:16 - Tomcat started on port(s): 52469 (http) with context path ''
 
-03-09-2021 20:35:13 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:54:16 - Started DemoApplicationTests in 4.286 seconds (JVM running for 18.213)
 
-03-09-2021 20:35:13 - Root WebApplicationContext: initialization completed in 1033 ms
+07-09-2021 00:54:17 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:35:18 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:54:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:35:18 - Started DemoApplication in 7.069 seconds (JVM running for 8.289)
+07-09-2021 00:54:37 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:35:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 00:54:38 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:35:39 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 00:55:21 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 12868 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:35:39 - Completed initialization in 0 ms
+07-09-2021 00:55:21 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:35:39 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'cardFromCVV': rejected value [1234]; codes [Pattern.transferParameters.cardFromCVV,Pattern.cardFromCVV,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.cardFromCVV,cardFromCVV]; arguments []; default message [cardFromCVV],[Ljavax.validation.constraints.Pattern$Flag;@62b9ad58,(\d{3})]; default message [должно соответствовать "(\d{3})"]] ]
+07-09-2021 00:55:23 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:36:19 - Client wants to transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 00:55:23 - Starting service [Tomcat]
 
-03-09-2021 20:36:24 - Confirmation is required for transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 00:55:23 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:36:35 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'cardFromNumber': rejected value [12345678901234567]; codes [Pattern.transferParameters.cardFromNumber,Pattern.cardFromNumber,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.cardFromNumber,cardFromNumber]; arguments []; default message [cardFromNumber],[Ljavax.validation.constraints.Pattern$Flag;@62b9ad58,(\d{16})]; default message [должно соответствовать "(\d{16})"]] ]
+07-09-2021 00:55:23 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:37:28 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 00:55:23 - Root WebApplicationContext: initialization completed in 2151 ms
 
-03-09-2021 20:37:41 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 2
+07-09-2021 00:55:24 - Tomcat started on port(s): 58225 (http) with context path ''
 
-03-09-2021 20:38:26 - Client wants to transfer 100 RUB from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 00:55:24 - Started DemoApplicationTests in 4.069 seconds (JVM running for 17.514)
 
-03-09-2021 20:38:31 - card 1234567890123456 currency is not suitable for transfer
+07-09-2021 00:55:25 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:40:07 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 30452 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:55:26 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:40:07 - No active profile set, falling back to default profiles: default
+07-09-2021 00:55:26 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:40:08 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:55:26 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:40:08 - Starting service [Tomcat]
+07-09-2021 00:56:34 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 31892 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:40:08 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:56:34 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:40:09 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:56:36 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:40:09 - Root WebApplicationContext: initialization completed in 1131 ms
+07-09-2021 00:56:37 - Starting service [Tomcat]
 
-03-09-2021 20:40:09 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:56:37 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:40:09 - Started DemoApplication in 2.367 seconds (JVM running for 3.509)
+07-09-2021 00:56:37 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:40:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 00:56:37 - Root WebApplicationContext: initialization completed in 2267 ms
 
-03-09-2021 20:40:21 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 00:56:38 - Tomcat started on port(s): 64832 (http) with context path ''
 
-03-09-2021 20:40:21 - Completed initialization in 0 ms
+07-09-2021 00:56:38 - Started DemoApplicationTests in 4.293 seconds (JVM running for 16.702)
 
-03-09-2021 20:40:21 - HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'amount.value'
+07-09-2021 00:56:39 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:41:01 - HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'amount.value'
+07-09-2021 00:56:39 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:54:57 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 28992 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:56:39 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:54:57 - No active profile set, falling back to default profiles: default
+07-09-2021 00:56:39 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:54:58 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:56:56 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 20:54:58 - Starting service [Tomcat]
+07-09-2021 00:57:30 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 25760 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 20:54:58 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 00:57:30 - No active profile set, falling back to default profiles: default
 
-03-09-2021 20:54:58 - Initializing Spring embedded WebApplicationContext
+07-09-2021 00:57:32 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 20:54:58 - Root WebApplicationContext: initialization completed in 1160 ms
+07-09-2021 00:57:32 - Starting service [Tomcat]
 
-03-09-2021 20:54:59 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 00:57:32 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 20:54:59 - Started DemoApplication in 2.32 seconds (JVM running for 3.512)
+07-09-2021 00:57:32 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 20:55:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 00:57:32 - Root WebApplicationContext: initialization completed in 1686 ms
 
-03-09-2021 20:55:01 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 00:57:33 - Tomcat started on port(s): 62568 (http) with context path ''
 
-03-09-2021 20:55:01 - Completed initialization in 0 ms
+07-09-2021 00:57:33 - Started DemoApplicationTests in 3.06 seconds (JVM running for 15.904)
 
-03-09-2021 20:55:01 - HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'amount.value'
+07-09-2021 00:57:33 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:01:43 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 30288 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 00:57:34 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:01:43 - No active profile set, falling back to default profiles: default
+07-09-2021 00:57:34 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:01:44 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 00:57:34 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:01:44 - Starting service [Tomcat]
+07-09-2021 00:57:34 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:01:44 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:05:33 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 31940 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:01:44 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:05:33 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:01:44 - Root WebApplicationContext: initialization completed in 1042 ms
+07-09-2021 01:05:34 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:01:45 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:05:34 - Starting service [Tomcat]
 
-03-09-2021 21:01:45 - Started DemoApplication in 2.081 seconds (JVM running for 3.19)
+07-09-2021 01:05:34 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:01:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:05:34 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:01:50 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:05:34 - Root WebApplicationContext: initialization completed in 1700 ms
 
-03-09-2021 21:01:50 - Completed initialization in 0 ms
+07-09-2021 01:05:35 - Tomcat started on port(s): 56491 (http) with context path ''
 
-03-09-2021 21:01:50 - HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'amount.value'
+07-09-2021 01:05:35 - Started DemoApplicationTests in 3.233 seconds (JVM running for 16.59)
 
-03-09-2021 21:03:38 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 29924 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:11:34 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 25664 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:03:38 - No active profile set, falling back to default profiles: default
+07-09-2021 01:11:34 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:03:39 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:11:36 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:03:39 - Starting service [Tomcat]
+07-09-2021 01:11:36 - Starting service [Tomcat]
 
-03-09-2021 21:03:39 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:11:36 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:03:39 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:11:36 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:03:39 - Root WebApplicationContext: initialization completed in 1055 ms
+07-09-2021 01:11:36 - Root WebApplicationContext: initialization completed in 1706 ms
 
-03-09-2021 21:03:39 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:11:37 - Tomcat started on port(s): 61481 (http) with context path ''
 
-03-09-2021 21:03:39 - Started DemoApplication in 2.159 seconds (JVM running for 3.436)
+07-09-2021 01:11:37 - Started DemoApplicationTests in 3.097 seconds (JVM running for 15.65)
 
-03-09-2021 21:03:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:21:58 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 34088 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:03:43 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:21:58 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:03:43 - Completed initialization in 0 ms
+07-09-2021 01:22:00 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:03:43 - HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'amount.value'
+07-09-2021 01:22:00 - Starting service [Tomcat]
 
-03-09-2021 21:04:14 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 19356 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:22:00 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:04:14 - No active profile set, falling back to default profiles: default
+07-09-2021 01:22:00 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:04:15 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:22:00 - Root WebApplicationContext: initialization completed in 1692 ms
 
-03-09-2021 21:04:15 - Starting service [Tomcat]
+07-09-2021 01:22:01 - Tomcat started on port(s): 61229 (http) with context path ''
 
-03-09-2021 21:04:15 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:22:01 - Started DemoApplicationTests in 3.199 seconds (JVM running for 13.644)
 
-03-09-2021 21:04:15 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:22:02 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:04:15 - Root WebApplicationContext: initialization completed in 1038 ms
+07-09-2021 01:22:38 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 12628 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:04:16 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:22:38 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:04:16 - Started DemoApplication in 2.176 seconds (JVM running for 3.313)
+07-09-2021 01:22:40 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:04:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:22:40 - Starting service [Tomcat]
 
-03-09-2021 21:04:24 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:22:40 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:04:24 - Completed initialization in 0 ms
+07-09-2021 01:22:40 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:04:24 - HV000030: No validator could be found for constraint 'javax.validation.constraints.Pattern' validating type 'java.lang.Integer'. Check configuration for 'amount.value'
+07-09-2021 01:22:40 - Root WebApplicationContext: initialization completed in 2074 ms
 
-03-09-2021 21:09:39 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 28056 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:22:42 - Tomcat started on port(s): 59745 (http) with context path ''
 
-03-09-2021 21:09:39 - No active profile set, falling back to default profiles: default
+07-09-2021 01:22:42 - Started DemoApplicationTests in 3.764 seconds (JVM running for 15.498)
 
-03-09-2021 21:09:40 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:22:42 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:09:40 - Starting service [Tomcat]
+07-09-2021 01:23:48 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 28864 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:09:40 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:23:48 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:09:40 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:23:49 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:09:40 - Root WebApplicationContext: initialization completed in 1048 ms
+07-09-2021 01:23:49 - Starting service [Tomcat]
 
-03-09-2021 21:09:40 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:23:49 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:09:40 - Started DemoApplication in 2.156 seconds (JVM running for 3.253)
+07-09-2021 01:23:49 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:09:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:23:49 - Root WebApplicationContext: initialization completed in 1666 ms
 
-03-09-2021 21:09:45 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:23:50 - Tomcat started on port(s): 57582 (http) with context path ''
 
-03-09-2021 21:09:45 - Completed initialization in 0 ms
+07-09-2021 01:23:50 - Started DemoApplicationTests in 3.003 seconds (JVM running for 17.575)
 
-03-09-2021 21:09:45 - Client wants to transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:10:28 - Confirmation is required for transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:10:36 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:10:45 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 2
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:11:20 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 24332 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:11:20 - No active profile set, falling back to default profiles: default
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:11:21 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:23:52 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:11:21 - Starting service [Tomcat]
+07-09-2021 01:24:16 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 35120 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:11:21 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:24:16 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:11:21 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:24:18 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:11:21 - Root WebApplicationContext: initialization completed in 1020 ms
+07-09-2021 01:24:18 - Starting service [Tomcat]
 
-03-09-2021 21:11:21 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:24:18 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:11:21 - Started DemoApplication in 2.09 seconds (JVM running for 3.26)
+07-09-2021 01:24:18 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:11:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:24:18 - Root WebApplicationContext: initialization completed in 1584 ms
 
-03-09-2021 21:11:44 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:24:19 - Tomcat started on port(s): 64571 (http) with context path ''
 
-03-09-2021 21:11:44 - Completed initialization in 0 ms
+07-09-2021 01:24:19 - Started DemoApplicationTests in 2.979 seconds (JVM running for 13.901)
 
-03-09-2021 21:11:45 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:24:20 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:12:58 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:24:20 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:13:05 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 30436 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:24:21 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:13:05 - No active profile set, falling back to default profiles: default
+07-09-2021 01:24:21 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:13:06 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:24:21 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:13:06 - Starting service [Tomcat]
+07-09-2021 01:24:21 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:13:06 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:24:21 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 21:13:06 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:24:42 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 33588 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:13:06 - Root WebApplicationContext: initialization completed in 989 ms
+07-09-2021 01:24:42 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:13:07 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:24:43 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:13:07 - Started DemoApplication in 2.089 seconds (JVM running for 3.14)
+07-09-2021 01:24:43 - Starting service [Tomcat]
 
-03-09-2021 21:13:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:24:43 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:13:13 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:24:43 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:13:13 - Completed initialization in 0 ms
+07-09-2021 01:24:43 - Root WebApplicationContext: initialization completed in 1686 ms
 
-03-09-2021 21:13:14 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:24:45 - Tomcat started on port(s): 53477 (http) with context path ''
 
-03-09-2021 21:38:54 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:24:45 - Started DemoApplicationTests in 3.174 seconds (JVM running for 14.509)
 
-03-09-2021 21:39:05 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 4056 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:25:41 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 24648 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:39:05 - No active profile set, falling back to default profiles: default
+07-09-2021 01:25:41 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:39:06 - Bean 'configurationPropertiesValidator' of type [ru.netology.demo.config.AmountValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-09-2021 01:25:42 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:39:06 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:25:42 - Starting service [Tomcat]
 
-03-09-2021 21:39:06 - Starting service [Tomcat]
+07-09-2021 01:25:42 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:39:06 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:25:42 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 21:39:06 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:25:42 - Root WebApplicationContext: initialization completed in 1649 ms
 
-03-09-2021 21:39:06 - Root WebApplicationContext: initialization completed in 1052 ms
+07-09-2021 01:25:44 - Tomcat started on port(s): 53125 (http) with context path ''
 
-03-09-2021 21:39:06 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:25:44 - Started DemoApplicationTests in 3.134 seconds (JVM running for 16.912)
 
-03-09-2021 21:39:06 - Started DemoApplication in 2.176 seconds (JVM running for 3.277)
+07-09-2021 01:26:02 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 20548 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 21:39:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:26:02 - No active profile set, falling back to default profiles: default
 
-03-09-2021 21:39:11 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:26:03 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 21:39:11 - Completed initialization in 1 ms
+07-09-2021 01:26:03 - Starting service [Tomcat]
 
-03-09-2021 21:39:11 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:26:03 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 21:39:16 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:26:04 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:28:53 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 29448 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:26:04 - Root WebApplicationContext: initialization completed in 1805 ms
 
-03-09-2021 22:28:53 - No active profile set, falling back to default profiles: default
+07-09-2021 01:26:05 - Tomcat started on port(s): 55243 (http) with context path ''
 
-03-09-2021 22:28:54 - Bean 'configurationPropertiesValidator' of type [ru.netology.demo.config.AmountValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-09-2021 01:26:05 - Started DemoApplicationTests in 3.351 seconds (JVM running for 14.829)
 
-03-09-2021 22:28:54 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:26:05 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:28:54 - Starting service [Tomcat]
+07-09-2021 01:26:06 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:28:54 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:26:06 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:28:54 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:26:06 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:28:54 - Root WebApplicationContext: initialization completed in 1012 ms
+07-09-2021 01:26:06 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:28:55 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:26:27 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 30732 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:28:55 - Started DemoApplication in 2.094 seconds (JVM running for 3.26)
+07-09-2021 01:26:27 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:29:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:26:29 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:29:00 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:26:29 - Starting service [Tomcat]
 
-03-09-2021 22:29:00 - Completed initialization in 1 ms
+07-09-2021 01:26:29 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:29:00 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:26:29 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:29:10 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:26:29 - Root WebApplicationContext: initialization completed in 1779 ms
 
-03-09-2021 22:42:56 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 11580 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:26:30 - Tomcat started on port(s): 54634 (http) with context path ''
 
-03-09-2021 22:42:56 - No active profile set, falling back to default profiles: default
+07-09-2021 01:26:30 - Started DemoApplicationTests in 3.339 seconds (JVM running for 14.014)
 
-03-09-2021 22:42:56 - Bean 'configurationPropertiesValidator' of type [ru.netology.demo.config.AmountValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Starting service [Tomcat]
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Root WebApplicationContext: initialization completed in 1012 ms
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:26:32 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:42:57 - Started DemoApplication in 2.086 seconds (JVM running for 3.4)
+07-09-2021 01:27:03 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 33276 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:43:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:27:03 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:43:01 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:27:04 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:43:01 - Completed initialization in 0 ms
+07-09-2021 01:27:04 - Starting service [Tomcat]
 
-03-09-2021 22:43:01 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:27:04 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:45:35 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:27:04 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:45:42 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 21720 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:27:04 - Root WebApplicationContext: initialization completed in 1626 ms
 
-03-09-2021 22:45:42 - No active profile set, falling back to default profiles: default
+07-09-2021 01:27:05 - Tomcat started on port(s): 64438 (http) with context path ''
 
-03-09-2021 22:45:43 - Bean 'configurationPropertiesValidator' of type [ru.netology.demo.config.AmountValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-09-2021 01:27:05 - Started DemoApplicationTests in 2.958 seconds (JVM running for 14.815)
 
-03-09-2021 22:45:43 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:27:06 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:45:43 - Starting service [Tomcat]
+07-09-2021 01:27:06 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:45:43 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:27:39 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 29392 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:45:43 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:27:39 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:45:43 - Root WebApplicationContext: initialization completed in 1050 ms
+07-09-2021 01:27:41 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:45:44 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:27:41 - Starting service [Tomcat]
 
-03-09-2021 22:45:44 - Started DemoApplication in 2.171 seconds (JVM running for 3.349)
+07-09-2021 01:27:41 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:46:07 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:27:41 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:46:07 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:27:41 - Root WebApplicationContext: initialization completed in 1974 ms
 
-03-09-2021 22:46:07 - Completed initialization in 1 ms
+07-09-2021 01:27:42 - Tomcat started on port(s): 49224 (http) with context path ''
 
-03-09-2021 22:46:07 - Client wants to transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:27:42 - Started DemoApplicationTests in 3.672 seconds (JVM running for 15.483)
 
-03-09-2021 22:49:37 - Confirmation is required for transfer -100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:27:43 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:49:44 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 29244 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:28:03 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:49:44 - No active profile set, falling back to default profiles: default
+07-09-2021 01:29:53 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 34236 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:49:45 - Bean 'configurationPropertiesValidator' of type [ru.netology.demo.config.AmountValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+07-09-2021 01:29:53 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:49:45 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:29:55 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:49:45 - Starting service [Tomcat]
+07-09-2021 01:29:55 - Starting service [Tomcat]
 
-03-09-2021 22:49:45 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:29:55 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:49:45 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:29:55 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:49:45 - Root WebApplicationContext: initialization completed in 1049 ms
+07-09-2021 01:29:55 - Root WebApplicationContext: initialization completed in 1950 ms
 
-03-09-2021 22:49:45 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:30:08 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 6848 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:49:45 - Started DemoApplication in 2.155 seconds (JVM running for 3.412)
+07-09-2021 01:30:08 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:49:54 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:30:09 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:49:54 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:30:09 - Starting service [Tomcat]
 
-03-09-2021 22:49:54 - Completed initialization in 1 ms
+07-09-2021 01:30:09 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:49:55 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.value': rejected value [-100]; codes [Min.transferParameters.amount.value,Min.amount.value,Min.value,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.value,amount.value]; arguments []; default message [amount.value],0]; default message [должно быть не меньше 0]] ]
+07-09-2021 01:30:10 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:50:05 - Client wants to transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:30:10 - Root WebApplicationContext: initialization completed in 1786 ms
 
-03-09-2021 22:50:08 - Confirmation is required for transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:30:11 - Tomcat started on port(s): 58299 (http) with context path ''
 
-03-09-2021 22:50:17 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.currency': rejected value []; codes [NotEmpty.transferParameters.amount.currency,NotEmpty.amount.currency,NotEmpty.currency,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.currency,amount.currency]; arguments []; default message [amount.currency]]; default message [не должно быть пустым]] ]
+07-09-2021 01:30:11 - Started DemoApplicationTests in 3.154 seconds (JVM running for 14.104)
 
-03-09-2021 22:50:24 - Client wants to transfer 100 RUB from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:50:27 - card 1234567890123456 currency is not suitable for transfer
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:51:54 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 26576 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:51:54 - No active profile set, falling back to default profiles: default
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:51:55 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:51:55 - Starting service [Tomcat]
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:51:55 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:30:12 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:51:55 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:31:06 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 31252 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:51:55 - Root WebApplicationContext: initialization completed in 1156 ms
+07-09-2021 01:31:06 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:51:56 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:31:07 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:51:56 - Started DemoApplication in 2.402 seconds (JVM running for 3.693)
+07-09-2021 01:31:07 - Starting service [Tomcat]
 
-03-09-2021 22:52:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:31:07 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:52:02 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:31:08 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:52:02 - Completed initialization in 1 ms
+07-09-2021 01:31:08 - Root WebApplicationContext: initialization completed in 1646 ms
 
-03-09-2021 22:52:02 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.value': rejected value [-100]; codes [Min.transferParameters.amount.value,Min.amount.value,Min.value,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.value,amount.value]; arguments []; default message [amount.value],0]; default message [должно быть не меньше 0]] ]
+07-09-2021 01:31:08 - Tomcat started on port(s): 57938 (http) with context path ''
 
-03-09-2021 22:52:39 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 10020 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:31:08 - Started DemoApplicationTests in 3.086 seconds (JVM running for 17.01)
 
-03-09-2021 22:52:39 - No active profile set, falling back to default profiles: default
+07-09-2021 01:32:44 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 18288 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 22:52:40 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:32:44 - No active profile set, falling back to default profiles: default
 
-03-09-2021 22:52:40 - Starting service [Tomcat]
+07-09-2021 01:32:45 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 22:52:40 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:32:45 - Starting service [Tomcat]
 
-03-09-2021 22:52:40 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:32:45 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 22:52:40 - Root WebApplicationContext: initialization completed in 1016 ms
+07-09-2021 01:32:46 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 22:52:40 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:32:46 - Root WebApplicationContext: initialization completed in 1787 ms
 
-03-09-2021 22:52:40 - Started DemoApplication in 2.146 seconds (JVM running for 3.407)
+07-09-2021 01:32:47 - Tomcat started on port(s): 64260 (http) with context path ''
 
-03-09-2021 22:52:50 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:32:47 - Started DemoApplicationTests in 3.294 seconds (JVM running for 14.781)
 
-03-09-2021 22:52:50 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:52:50 - Completed initialization in 1 ms
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:52:51 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.value': rejected value [-100]; codes [Min.transferParameters.amount.value,Min.amount.value,Min.value,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.value,amount.value]; arguments []; default message [amount.value],0]; default message [должно быть не меньше 0]] ]
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 22:53:01 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.currency': rejected value [RUB]; codes [Pattern.transferParameters.amount.currency,Pattern.amount.currency,Pattern.currency,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.currency,amount.currency]; arguments []; default message [amount.currency],[Ljavax.validation.constraints.Pattern$Flag;@5eebed06,RUR]; default message [должно соответствовать "RUR"]] ]
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 23:03:25 - Starting DemoApplication using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 25888 (D:\JAVA\money-transfer-service\target\classes started by amsmo in D:\JAVA\money-transfer-service)
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 23:03:25 - No active profile set, falling back to default profiles: default
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 23:03:26 - Tomcat initialized with port(s): 5500 (http)
+07-09-2021 01:32:48 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 
-03-09-2021 23:03:26 - Starting service [Tomcat]
+07-09-2021 01:33:09 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 31732 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 23:03:26 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+07-09-2021 01:33:09 - No active profile set, falling back to default profiles: default
 
-03-09-2021 23:03:26 - Initializing Spring embedded WebApplicationContext
+07-09-2021 01:33:11 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 23:03:26 - Root WebApplicationContext: initialization completed in 1077 ms
+07-09-2021 01:33:11 - Starting service [Tomcat]
 
-03-09-2021 23:03:26 - Tomcat started on port(s): 5500 (http) with context path ''
+07-09-2021 01:33:11 - Starting Servlet engine: [Apache Tomcat/9.0.52]
 
-03-09-2021 23:03:26 - Started DemoApplication in 2.262 seconds (JVM running for 3.459)
+07-09-2021 01:33:11 - Initializing Spring embedded WebApplicationContext
 
-03-09-2021 23:03:30 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+07-09-2021 01:33:11 - Root WebApplicationContext: initialization completed in 1965 ms
 
-03-09-2021 23:03:30 - Initializing Servlet 'dispatcherServlet'
+07-09-2021 01:33:12 - Tomcat started on port(s): 64593 (http) with context path ''
 
-03-09-2021 23:03:30 - Completed initialization in 1 ms
+07-09-2021 01:33:12 - Started DemoApplicationTests in 3.543 seconds (JVM running for 15.273)
 
-03-09-2021 23:03:31 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.value': rejected value [-100]; codes [Min.transferParameters.amount.value,Min.amount.value,Min.value,Min.int,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.value,amount.value]; arguments []; default message [amount.value],0]; default message [должно быть не меньше 0]] ]
+07-09-2021 01:33:45 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 34044 (started by amsmo in D:\JAVA\money-transfer-service)
 
-03-09-2021 23:03:48 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'amount.currency': rejected value [RUB]; codes [Pattern.transferParameters.amount.currency,Pattern.amount.currency,Pattern.currency,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.amount.currency,amount.currency]; arguments []; default message [amount.currency],[Ljavax.validation.constraints.Pattern$Flag;@216adc7d,RUR]; default message [должно соответствовать "RUR"]] ]
+07-09-2021 01:33:45 - No active profile set, falling back to default profiles: default
 
-03-09-2021 23:04:00 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<ru.netology.demo.responseObjects.ConfirmResponse> ru.netology.demo.controller.Controller.requestTransfer(ru.netology.demo.requestObjects.TransferParameters): [Field error in object 'transferParameters' on field 'cardFromValidTill': rejected value [03/222]; codes [Pattern.transferParameters.cardFromValidTill,Pattern.cardFromValidTill,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transferParameters.cardFromValidTill,cardFromValidTill]; arguments []; default message [cardFromValidTill],[Ljavax.validation.constraints.Pattern$Flag;@216adc7d,(\d{2})(\/)(\d{2})]; default message [должно соответствовать "(\d{2})(\/)(\d{2})"]] ]
+07-09-2021 01:33:47 - Tomcat initialized with port(s): 0 (http)
 
-03-09-2021 23:04:04 - Client wants to transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567
+07-09-2021 01:33:47 - Starting service [Tomcat]
 
-03-09-2021 23:04:07 - Confirmation is required for transfer 100 RUR from card {1234567890123456, 03/22, 123} to card number 2345678901234567. OperationId = 1
+07-09-2021 01:33:47 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+
+07-09-2021 01:33:47 - Initializing Spring embedded WebApplicationContext
+
+07-09-2021 01:33:47 - Root WebApplicationContext: initialization completed in 2064 ms
+
+07-09-2021 01:33:48 - Tomcat started on port(s): 54745 (http) with context path ''
+
+07-09-2021 01:33:48 - Started DemoApplicationTests in 3.818 seconds (JVM running for 15.011)
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:33:50 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:00 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 6624 (started by amsmo in D:\JAVA\money-transfer-service)
+
+07-09-2021 01:36:00 - No active profile set, falling back to default profiles: default
+
+07-09-2021 01:36:04 - Tomcat initialized with port(s): 0 (http)
+
+07-09-2021 01:36:04 - Starting service [Tomcat]
+
+07-09-2021 01:36:04 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+
+07-09-2021 01:36:04 - Initializing Spring embedded WebApplicationContext
+
+07-09-2021 01:36:04 - Root WebApplicationContext: initialization completed in 4231 ms
+
+07-09-2021 01:36:06 - Tomcat started on port(s): 53096 (http) with context path ''
+
+07-09-2021 01:36:06 - Started DemoApplicationTests in 6.227 seconds (JVM running for 19.773)
+
+07-09-2021 01:36:15 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 32452 (started by amsmo in D:\JAVA\money-transfer-service)
+
+07-09-2021 01:36:15 - No active profile set, falling back to default profiles: default
+
+07-09-2021 01:36:17 - Tomcat initialized with port(s): 0 (http)
+
+07-09-2021 01:36:17 - Starting service [Tomcat]
+
+07-09-2021 01:36:17 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+
+07-09-2021 01:36:17 - Initializing Spring embedded WebApplicationContext
+
+07-09-2021 01:36:17 - Root WebApplicationContext: initialization completed in 1633 ms
+
+07-09-2021 01:36:18 - Tomcat started on port(s): 62414 (http) with context path ''
+
+07-09-2021 01:36:18 - Started DemoApplicationTests in 2.952 seconds (JVM running for 17.266)
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:36:19 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:54 - Starting DemoApplicationTests using Java 15.0.2 on LAPTOP-CUF6FNGR with PID 35560 (started by amsmo in D:\JAVA\money-transfer-service)
+
+07-09-2021 01:40:54 - No active profile set, falling back to default profiles: default
+
+07-09-2021 01:40:55 - Tomcat initialized with port(s): 0 (http)
+
+07-09-2021 01:40:55 - Starting service [Tomcat]
+
+07-09-2021 01:40:55 - Starting Servlet engine: [Apache Tomcat/9.0.52]
+
+07-09-2021 01:40:55 - Initializing Spring embedded WebApplicationContext
+
+07-09-2021 01:40:55 - Root WebApplicationContext: initialization completed in 1647 ms
+
+07-09-2021 01:40:56 - Tomcat started on port(s): 65108 (http) with context path ''
+
+07-09-2021 01:40:56 - Started DemoApplicationTests in 3.002 seconds (JVM running for 13.957)
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
+
+07-09-2021 01:40:58 - Failed to evaluate Jackson deserialization for type [[simple type, class ru.netology.demo.responseObjects.ExceptionResponse]]: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `ru.netology.demo.responseObjects.ExceptionResponse`: Argument #0 of constructor [constructor for `ru.netology.demo.responseObjects.ExceptionResponse` (2 args), annotations: {interface com.fasterxml.jackson.annotation.JsonCreator=@com.fasterxml.jackson.annotation.JsonCreator(mode=DEFAULT)} has no property name (and is not Injectable): can not use as property-based Creator
 

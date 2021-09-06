@@ -1,5 +1,6 @@
 package ru.netology.demo.requestObjects;
 
+import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 
 public class ConfirmParameters {
@@ -9,7 +10,8 @@ public class ConfirmParameters {
     @Pattern(regexp = "(\\d+)")
     private String code;
 
-    public ConfirmParameters(String operationId, String code) {
+    public @Valid  ConfirmParameters(String operationId, String code) {
+
         this.operationId = operationId;
         this.code = code;
     }
@@ -18,16 +20,8 @@ public class ConfirmParameters {
         return operationId;
     }
 
-    public void setOperationId(String operationId) {
-        this.operationId = operationId;
-    }
-
     public String getCode() {
         return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     @Override

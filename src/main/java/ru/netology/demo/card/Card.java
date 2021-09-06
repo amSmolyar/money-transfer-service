@@ -59,17 +59,22 @@ public class Card {
         return balance;
     }
 
-    public void chargeMoney(int amount) {
+    public boolean chargeMoney(int amount) {
         lock.lock();
-        this.balance = this.balance + amount;
+        boolean res = false;
+        if (amount > 0) {
+            this.balance = this.balance + amount;
+            res = true;
+        }
         condition.signalAll();
         lock.unlock();
+        return res;
     }
 
     public boolean offMoney(int amount) {
         lock.lock();
         boolean res = false;
-        if (this.balance >= amount) {
+        if ((amount > 0) && (this.balance >= amount)) {
             this.balance = this.balance - amount;
             res = true;
         }

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
+import java.util.Objects;
 
 public class Amount {
     @Min(0)
@@ -22,15 +23,21 @@ public class Amount {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public String getCurrency() {
         return currency;
     }
 
-    public void setCurrency(String currency) {
-        this.currency = currency;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Amount amount = (Amount) o;
+        return value == amount.value &&
+                currency.equals(amount.currency);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value, currency);
     }
 }

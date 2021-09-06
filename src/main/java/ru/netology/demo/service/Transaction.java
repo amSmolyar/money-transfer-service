@@ -2,6 +2,8 @@ package ru.netology.demo.service;
 
 import ru.netology.demo.requestObjects.Amount;
 
+import java.util.Objects;
+
 public class Transaction {
     private String cardFromNumber;
     private String cardToNumber;
@@ -42,5 +44,20 @@ public class Transaction {
         return amount.getValue() + " " + amount.getCurrency() +
                 " from card number " + cardFromNumber +
                 " to card number " + cardToNumber;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Transaction that = (Transaction) o;
+        return cardFromNumber.equals(that.cardFromNumber) &&
+                cardToNumber.equals(that.cardToNumber) &&
+                amount.equals(that.amount);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(cardFromNumber, cardToNumber, amount);
     }
 }
