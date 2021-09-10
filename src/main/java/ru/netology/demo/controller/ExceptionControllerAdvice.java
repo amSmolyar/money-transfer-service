@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import ru.netology.demo.exceptions.*;
-import ru.netology.demo.responseObjects.ExceptionResponse;
+import ru.netology.demo.dto.ExceptionResponse;
 
 @RestControllerAdvice
 public class ExceptionControllerAdvice {

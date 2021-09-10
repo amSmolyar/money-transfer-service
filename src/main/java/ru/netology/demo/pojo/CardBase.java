@@ -1,6 +1,6 @@
-package ru.netology.demo.card;
+package ru.netology.demo.pojo;
 
-import ru.netology.demo.card.Card;
+import ru.netology.demo.dto.Card;
 import ru.netology.demo.config.CardFileParam;
 
 import java.io.BufferedReader;

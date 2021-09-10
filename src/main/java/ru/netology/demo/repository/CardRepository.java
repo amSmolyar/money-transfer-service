@@ -1,15 +1,15 @@
 package ru.netology.demo.repository;
 
-import ru.netology.demo.card.Card;
-import ru.netology.demo.card.CardBase;
+import ru.netology.demo.dto.Card;
+import ru.netology.demo.pojo.CardBase;
 
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class Repository {
+public class CardRepository {
     private ConcurrentHashMap<String, Card> cardMap;
 
-    public Repository() {
+    public CardRepository() {
         CardBase cardBase = new CardBase();
         cardMap = cardBase.getCardMap();
     }

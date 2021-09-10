@@ -9,15 +9,13 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import ru.netology.demo.card.Card;
+import ru.netology.demo.dto.*;
 import ru.netology.demo.exceptions.CardNotFoundException;
 import ru.netology.demo.exceptions.CurrencyMismatchException;
 import ru.netology.demo.exceptions.FailedOperationException;
 import ru.netology.demo.exceptions.InsufficientFundsException;
-import ru.netology.demo.repository.Repository;
-import ru.netology.demo.requestObjects.Amount;
-import ru.netology.demo.requestObjects.ConfirmParameters;
-import ru.netology.demo.requestObjects.TransferParameters;
+import ru.netology.demo.pojo.Transaction;
+import ru.netology.demo.repository.CardRepository;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -30,13 +28,13 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(JUnitPlatform.class)
-class ServiceTest {
+class TransferServiceTest {
 
     @InjectMocks
-    Service service;
+    TransferService transferService;
 
     @Mock
-    Repository repository;
+    CardRepository cardRepository;
 
     private Map<String, Card> createMap() {
         Map<String, Card> mapRepo = new HashMap<>();
@@ -69,16 +67,16 @@ class ServiceTest {
 
         Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardFromNumber()))
+        when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                 .thenReturn(cardFromRepo);
 
         Card cardExpected = mapRepo.get(transferParameters.getCardFromNumber());
         String cardNumberExpected = cardExpected.getNumber();
 
-        String cardNumberActual = service.checkCardFrom(transferParameters);
+        String cardNumberActual = transferService.checkCardFrom(transferParameters);
 
         assertDoesNotThrow(() ->
-                service.checkCardFrom(transferParameters));
+                transferService.checkCardFrom(transferParameters));
 
         assertEquals(cardNumberExpected, cardNumberActual);
     }
@@ -106,11 +104,11 @@ class ServiceTest {
 
         Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardFromNumber()))
+        when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                 .thenReturn(cardFromRepo);
 
         CardNotFoundException e = assertThrows(CardNotFoundException.class, () ->
-                service.checkCardFrom(transferParameters));
+                transferService.checkCardFrom(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("there is no card with number " + transferParameters.getCardFromNumber() + " in the database"));
@@ -141,11 +139,11 @@ class ServiceTest {
 
         Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardFromNumber()))
+        when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                 .thenReturn(cardFromRepo);
 
         CardNotFoundException e = assertThrows(CardNotFoundException.class, () ->
-                service.checkCardFrom(transferParameters));
+                transferService.checkCardFrom(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("the card " + transferParameters.getCardFromNumber() + " expiration date is incorrect"));
@@ -175,11 +173,11 @@ class ServiceTest {
 
         Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardFromNumber()))
+        when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                 .thenReturn(cardFromRepo);
 
         CardNotFoundException e = assertThrows(CardNotFoundException.class, () ->
-                service.checkCardFrom(transferParameters));
+                transferService.checkCardFrom(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("the card " + transferParameters.getCardFromNumber() + " cvv code is incorrect"));
@@ -209,11 +207,11 @@ class ServiceTest {
 
         Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardFromNumber()))
+        when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                 .thenReturn(cardFromRepo);
 
         CurrencyMismatchException e = assertThrows(CurrencyMismatchException.class, () ->
-                service.checkCardFrom(transferParameters));
+                transferService.checkCardFrom(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("card " + transferParameters.getCardFromNumber() + " currency is not suitable for transfer"));
@@ -243,11 +241,11 @@ class ServiceTest {
 
         Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardFromNumber()))
+        when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                 .thenReturn(cardFromRepo);
 
         InsufficientFundsException e = assertThrows(InsufficientFundsException.class, () ->
-                service.checkCardFrom(transferParameters));
+                transferService.checkCardFrom(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("there are not enough funds on the card " + transferParameters.getCardFromNumber() + " for transfer"));
@@ -265,13 +263,13 @@ class ServiceTest {
 
         Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardToNumber()))
+        when(cardRepository.getCard(transferParameters.getCardToNumber()))
                 .thenReturn(cardToRepo);
 
-        String cardNumberActual = service.checkCardTo(transferParameters);
+        String cardNumberActual = transferService.checkCardTo(transferParameters);
 
         assertDoesNotThrow(() ->
-                service.checkCardTo(transferParameters));
+                transferService.checkCardTo(transferParameters));
 
         assertEquals(transferParameters.getCardToNumber(), cardNumberActual);
     }
@@ -299,11 +297,11 @@ class ServiceTest {
 
         Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardToNumber()))
+        when(cardRepository.getCard(transferParameters.getCardToNumber()))
                 .thenReturn(cardToRepo);
 
         CardNotFoundException e = assertThrows(CardNotFoundException.class, () ->
-                service.checkCardTo(transferParameters));
+                transferService.checkCardTo(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("there is no card with number " + transferParameters.getCardToNumber() + " in the database"));
@@ -323,11 +321,11 @@ class ServiceTest {
 
         Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
 
-        when(repository.getCard(transferParameters.getCardToNumber()))
+        when(cardRepository.getCard(transferParameters.getCardToNumber()))
                 .thenReturn(cardToRepo);
 
         CurrencyMismatchException e = assertThrows(CurrencyMismatchException.class, () ->
-                service.checkCardTo(transferParameters));
+                transferService.checkCardTo(transferParameters));
 
         String message = e.getMessage();
         assertTrue(message.equals("card " + transferParameters.getCardToNumber() + " currency is not suitable for transfer"));
@@ -358,17 +356,17 @@ class ServiceTest {
             TransferParameters transferParameters = parametersArray[ii];
 
             Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardFromNumber()))
+            when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                     .thenReturn(cardFromRepo);
 
             Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardToNumber()))
+            when(cardRepository.getCard(transferParameters.getCardToNumber()))
                     .thenReturn(cardToRepo);
 
-            String operationId = service.requestTransfer(transferParameters);
+            String operationId = transferService.requestTransfer(transferParameters);
             assertEquals(String.valueOf(ii + 1), operationId);
 
-            Map<String, Transaction> actualOperationMap = service.getOperationMap();
+            Map<String, Transaction> actualOperationMap = transferService.getOperationMap();
 
             assertEquals(transferParameters.getCardFromNumber(), actualOperationMap.get(operationId).getCardFromNumber());
             assertEquals(transferParameters.getCardToNumber(), actualOperationMap.get(operationId).getCardToNumber());
@@ -403,34 +401,34 @@ class ServiceTest {
             TransferParameters transferParameters = parametersArray[ii];
 
             Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardFromNumber()))
+            when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                     .thenReturn(cardFromRepo);
 
             Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardToNumber()))
+            when(cardRepository.getCard(transferParameters.getCardToNumber()))
                     .thenReturn(cardToRepo);
 
-            String operationId = service.requestTransfer(transferParameters);
+            String operationId = transferService.requestTransfer(transferParameters);
 
             int cardFromBalance = mapRepo.get(transferParameters.getCardFromNumber()).getBalance();
             int cardToBalance = mapRepo.get(transferParameters.getCardToNumber()).getBalance();
 
-            when(repository.offMoney(transferParameters.getCardFromNumber(), transferParameters.getAmount().getValue()))
+            when(cardRepository.offMoney(transferParameters.getCardFromNumber(), transferParameters.getAmount().getValue()))
                     .thenReturn(mapRepo.get(transferParameters.getCardFromNumber()).offMoney(transferParameters.getAmount().getValue()));
 
-            when(repository.chargeMoney(transferParameters.getCardToNumber(), transferParameters.getAmount().getValue()))
+            when(cardRepository.chargeMoney(transferParameters.getCardToNumber(), transferParameters.getAmount().getValue()))
                     .thenReturn(mapRepo.get(transferParameters.getCardToNumber()).chargeMoney(transferParameters.getAmount().getValue()));
 
 
             ConfirmParameters confirmParameters = new ConfirmParameters(String.valueOf(ii + 1), "0000");
-            service.confirmOperation(confirmParameters);
+            transferService.confirmOperation(confirmParameters);
 
-            assertFalse(service.getOperationMap().containsKey(String.valueOf(ii + 1)));
+            assertFalse(transferService.getOperationMap().containsKey(String.valueOf(ii + 1)));
             assertEquals(cardFromBalance - transferParameters.getAmount().getValue(), mapRepo.get(transferParameters.getCardFromNumber()).getBalance());
             assertEquals(cardToBalance + transferParameters.getAmount().getValue(), mapRepo.get(transferParameters.getCardToNumber()).getBalance());
         }
 
-        assertTrue(service.getOperationMap().isEmpty());
+        assertTrue(transferService.getOperationMap().isEmpty());
     }
 
     // ==========================================================================================
@@ -446,25 +444,25 @@ class ServiceTest {
             TransferParameters transferParameters = parametersArray[ii];
 
             Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardFromNumber()))
+            when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                     .thenReturn(cardFromRepo);
 
             Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardToNumber()))
+            when(cardRepository.getCard(transferParameters.getCardToNumber()))
                     .thenReturn(cardToRepo);
 
-            String operationId = service.requestTransfer(transferParameters);
+            String operationId = transferService.requestTransfer(transferParameters);
 
             ConfirmParameters confirmParameters = new ConfirmParameters(String.valueOf(parametersArray.length + ii + 1), "0000");
 
             FailedOperationException e = assertThrows(FailedOperationException.class, () ->
-                    service.confirmOperation(confirmParameters));
+                    transferService.confirmOperation(confirmParameters));
 
             String message = e.getMessage();
             assertTrue(message.equals("There is no operation with operationId = " + (parametersArray.length + ii + 1) + ". The operation could not be completed."));
         }
 
-        assertTrue(service.getOperationMap().size() == parametersArray.length);
+        assertTrue(transferService.getOperationMap().size() == parametersArray.length);
     }
 
     // ==========================================================================================
@@ -493,40 +491,40 @@ class ServiceTest {
             TransferParameters transferParameters = parametersArray[ii];
 
             Optional<Card> cardFromRepo = (mapRepo.containsKey(transferParameters.getCardFromNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardFromNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardFromNumber()))
+            when(cardRepository.getCard(transferParameters.getCardFromNumber()))
                     .thenReturn(cardFromRepo);
 
             Optional<Card> cardToRepo = (mapRepo.containsKey(transferParameters.getCardToNumber())) ? Optional.of(mapRepo.get(transferParameters.getCardToNumber())) : Optional.empty();
-            when(repository.getCard(transferParameters.getCardToNumber()))
+            when(cardRepository.getCard(transferParameters.getCardToNumber()))
                     .thenReturn(cardToRepo);
 
-            String operationId = service.requestTransfer(transferParameters);
+            String operationId = transferService.requestTransfer(transferParameters);
         }
 
-        when(repository.offMoney(parametersArray[0].getCardFromNumber(), parametersArray[0].getAmount().getValue()))
+        when(cardRepository.offMoney(parametersArray[0].getCardFromNumber(), parametersArray[0].getAmount().getValue()))
                 .thenReturn(mapRepo.get(parametersArray[0].getCardFromNumber()).offMoney(parametersArray[0].getAmount().getValue()));
 
-        when(repository.chargeMoney(parametersArray[0].getCardToNumber(), parametersArray[0].getAmount().getValue()))
+        when(cardRepository.chargeMoney(parametersArray[0].getCardToNumber(), parametersArray[0].getAmount().getValue()))
                 .thenReturn(mapRepo.get(parametersArray[0].getCardToNumber()).chargeMoney(parametersArray[0].getAmount().getValue()));
 
-        service.confirmOperation(new ConfirmParameters(String.valueOf(1), "0000"));
+        transferService.confirmOperation(new ConfirmParameters(String.valueOf(1), "0000"));
 
         for (int ii = 1; ii < parametersArray.length; ii++) {
             TransferParameters transferParameters = parametersArray[ii];
 
-            when(repository.offMoney(transferParameters.getCardFromNumber(), transferParameters.getAmount().getValue()))
+            when(cardRepository.offMoney(transferParameters.getCardFromNumber(), transferParameters.getAmount().getValue()))
                     .thenReturn(mapRepo.get(transferParameters.getCardFromNumber()).offMoney(transferParameters.getAmount().getValue()));
 
             ConfirmParameters confirmParameters = new ConfirmParameters(String.valueOf(ii + 1), "0000");
 
             InsufficientFundsException e = assertThrows(InsufficientFundsException.class, () ->
-                    service.confirmOperation(confirmParameters));
+                    transferService.confirmOperation(confirmParameters));
 
             String message = e.getMessage();
             assertTrue(message.equals("there are not enough funds on the card " + transferParameters.getCardFromNumber() + " to complete operation with operationId = " + (ii + 1)));
         }
 
-        assertTrue(service.getOperationMap().size() == (parametersArray.length - 1));
+        assertTrue(transferService.getOperationMap().size() == (parametersArray.length - 1));
     }
 
 }

@@ -1,8 +1,6 @@
 package ru.netology.demo;
 
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +11,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.testcontainers.containers.GenericContainer;
-import ru.netology.demo.requestObjects.Amount;
-import ru.netology.demo.requestObjects.ConfirmParameters;
-import ru.netology.demo.requestObjects.TransferParameters;
-import ru.netology.demo.responseObjects.ConfirmResponse;
-import ru.netology.demo.responseObjects.ExceptionResponse;
+import ru.netology.demo.dto.Amount;
+import ru.netology.demo.dto.ConfirmParameters;
+import ru.netology.demo.dto.TransferParameters;
+import ru.netology.demo.dto.ConfirmResponse;
+import ru.netology.demo.dto.ExceptionResponse;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

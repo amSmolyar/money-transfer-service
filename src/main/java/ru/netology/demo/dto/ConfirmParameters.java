@@ -1,4 +1,4 @@
-package ru.netology.demo.requestObjects;
+package ru.netology.demo.dto;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Pattern;

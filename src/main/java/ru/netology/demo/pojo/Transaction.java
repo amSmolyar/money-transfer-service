@@ -1,6 +1,6 @@
-package ru.netology.demo.service;
+package ru.netology.demo.pojo;
 
-import ru.netology.demo.requestObjects.Amount;
+import ru.netology.demo.dto.Amount;
 
 import java.util.Objects;
 

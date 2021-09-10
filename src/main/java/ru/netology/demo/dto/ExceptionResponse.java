@@ -1,4 +1,4 @@
-package ru.netology.demo.responseObjects;
+package ru.netology.demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 

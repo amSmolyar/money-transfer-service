@@ -1,4 +1,4 @@
-package ru.netology.demo.card;
+package ru.netology.demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 

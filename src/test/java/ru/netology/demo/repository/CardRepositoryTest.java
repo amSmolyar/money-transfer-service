@@ -1,6 +1,5 @@
 package ru.netology.demo.repository;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -8,8 +7,8 @@ import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import ru.netology.demo.card.Card;
-import ru.netology.demo.card.CardBase;
+import ru.netology.demo.dto.Card;
+import ru.netology.demo.pojo.CardBase;
 import ru.netology.demo.config.CardFileParam;
 
 import java.util.Map;
@@ -20,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(MockitoExtension.class)
 @RunWith(JUnitPlatform.class)
-class RepositoryTest {
+class CardRepositoryTest {
 
     @InjectMocks
     CardFileParam cardFileParam;
@@ -29,7 +28,7 @@ class RepositoryTest {
     CardBase cardBase;
 
     @InjectMocks
-    Repository repository;
+    CardRepository cardRepository;
 
     private ConcurrentHashMap<String, Card> createMap() {
         ConcurrentHashMap<String, Card> map = new ConcurrentHashMap<>();
@@ -46,9 +45,9 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"1234567890123456", "2345678901234567", "3456789012345678", "4567890123456789"})
     void test_repositoryConstructor_getCard(String number) {
-        Map<String, Card> mapActual = repository.getCardMap();
+        Map<String, Card> mapActual = cardRepository.getCardMap();
 
-        Card actual = repository.getCard(number).orElse(null);
+        Card actual = cardRepository.getCard(number).orElse(null);
         Card expected = createMap().get(number);
 
         assertTrue(expected.equals(actual));
@@ -62,9 +61,9 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"1234567890123456", "2345678901234567", "3456789012345678", "4567890123456789"})
     void test_chargeMoney_true_correctDataIn(String number) {
-        assertTrue(repository.chargeMoney(number, 100));
-        Map<String, Card> mapActual = repository.getCardMap();
-        Card actual = repository.getCard(number).orElse(null);
+        assertTrue(cardRepository.chargeMoney(number, 100));
+        Map<String, Card> mapActual = cardRepository.getCardMap();
+        Card actual = cardRepository.getCard(number).orElse(null);
         Card atStart = createMap().get(number);
         int newBalance = atStart.getBalance() + 100;
         Card expected = new Card(atStart.getNumber(), atStart.getValidTill(), atStart.getCvv(), atStart.getCurrency(), newBalance);
@@ -79,7 +78,7 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"5234567890123456", "6345678901234567", "7456789012345678", "8567890123456789"})
     void test_chargeMoney_false_wrongNumber(String number) {
-        assertFalse(repository.chargeMoney(number, 100));
+        assertFalse(cardRepository.chargeMoney(number, 100));
     }
 
     // ==========================================================================================
@@ -89,9 +88,9 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"1234567890123456", "2345678901234567", "3456789012345678", "4567890123456789"})
     void test_chargeMoney_false_wrongAmount(String number) {
-        assertFalse(repository.chargeMoney(number, -100));
-        assertFalse(repository.chargeMoney(number, 0));
-        assertFalse(repository.chargeMoney(number, -1));
+        assertFalse(cardRepository.chargeMoney(number, -100));
+        assertFalse(cardRepository.chargeMoney(number, 0));
+        assertFalse(cardRepository.chargeMoney(number, -1));
     }
 
     // ==========================================================================================
@@ -101,18 +100,18 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"1234567890123456", "2345678901234567", "3456789012345678", "4567890123456789"})
     void test_offMoney_true_correctDataIn(String number) {
-        assertTrue(repository.offMoney(number, 100));
+        assertTrue(cardRepository.offMoney(number, 100));
 
-        Card actual = repository.getCard(number).orElse(null);
+        Card actual = cardRepository.getCard(number).orElse(null);
         Card atStart = createMap().get(number);
         int newBalance = atStart.getBalance() - 100;
         Card expected = new Card(atStart.getNumber(), atStart.getValidTill(), atStart.getCvv(), atStart.getCurrency(), newBalance);
 
         assertTrue(expected.equals(actual));
 
-        assertTrue(repository.offMoney(number, 900));
+        assertTrue(cardRepository.offMoney(number, 900));
 
-        actual = repository.getCard(number).orElse(null);
+        actual = cardRepository.getCard(number).orElse(null);
         newBalance = newBalance - 900;
         expected = new Card(atStart.getNumber(), atStart.getValidTill(), atStart.getCvv(), atStart.getCurrency(), newBalance);
 
@@ -126,9 +125,9 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"5234567890123456", "6345678901234567", "7456789012345678", "8567890123456789"})
     void test_offMoney_false_wrongNumber(String number) {
-        assertFalse(repository.offMoney(number, 100));
-        assertFalse(repository.offMoney(number, 500));
-        assertFalse(repository.offMoney(number, 1000));
+        assertFalse(cardRepository.offMoney(number, 100));
+        assertFalse(cardRepository.offMoney(number, 500));
+        assertFalse(cardRepository.offMoney(number, 1000));
     }
 
     // ==========================================================================================
@@ -138,20 +137,20 @@ class RepositoryTest {
     @ParameterizedTest
     @ValueSource(strings = {"1234567890123456", "2345678901234567", "3456789012345678", "4567890123456789"})
     void test_offMoney_false_wrongAmount(String number) {
-        assertFalse(repository.offMoney(number, -100));
-        assertFalse(repository.offMoney(number, 0));
-        assertFalse(repository.offMoney(number, -1));
+        assertFalse(cardRepository.offMoney(number, -100));
+        assertFalse(cardRepository.offMoney(number, 0));
+        assertFalse(cardRepository.offMoney(number, -1));
 
         if (number.equals("1234567890123456"))
-            assertFalse(repository.offMoney(number, 1001));
+            assertFalse(cardRepository.offMoney(number, 1001));
         else if (number.equals("2345678901234567"))
-            assertFalse(repository.offMoney(number, 2001));
+            assertFalse(cardRepository.offMoney(number, 2001));
         else if (number.equals("3456789012345678"))
-            assertFalse(repository.offMoney(number, 3001));
+            assertFalse(cardRepository.offMoney(number, 3001));
         else if (number.equals("4567890123456789"))
-            assertFalse(repository.offMoney(number, 4001));
+            assertFalse(cardRepository.offMoney(number, 4001));
 
 
-        assertFalse(repository.offMoney(number, 10000));
+        assertFalse(cardRepository.offMoney(number, 10000));
     }
 }

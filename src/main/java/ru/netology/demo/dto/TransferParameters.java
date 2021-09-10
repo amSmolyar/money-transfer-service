@@ -1,7 +1,8 @@
-package ru.netology.demo.requestObjects;
+package ru.netology.demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import org.springframework.validation.annotation.Validated;
+import ru.netology.demo.dto.Amount;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
