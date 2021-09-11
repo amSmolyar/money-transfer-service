@@ -1,7 +1,7 @@
 package ru.netology.demo.exceptions;
 
 public class CurrencyMismatchException extends RuntimeException {
-    private int id;
+    private final int id;
 
     public CurrencyMismatchException(String msg) {
         super(msg);

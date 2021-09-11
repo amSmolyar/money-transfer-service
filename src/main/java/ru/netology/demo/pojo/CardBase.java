@@ -13,11 +13,11 @@ import java.util.Date;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CardBase {
-    private ConcurrentHashMap<String, Card> cardMap;
-    private CardFileParam cardFile;
+    private final ConcurrentHashMap<String, Card> cardMap;
+    private final CardFileParam cardFile;
 
-    private DateFormat dateFormat;
-    private Date date;
+    private final DateFormat dateFormat;
+    private final Date date;
 
     public CardBase() {
         cardMap = new ConcurrentHashMap<>();

@@ -8,10 +8,10 @@ import java.util.Objects;
 
 public class Amount {
     @Min(0)
-    private int value;
+    private final int value;
 
     @Pattern(regexp = "RUR")
-    private String currency;
+    private final String currency;
 
     @JsonCreator
     public Amount(int value, String currency) {

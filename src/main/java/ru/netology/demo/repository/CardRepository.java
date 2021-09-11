@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CardRepository {
-    private ConcurrentHashMap<String, Card> cardMap;
+    private final ConcurrentHashMap<String, Card> cardMap;
 
     public CardRepository() {
         CardBase cardBase = new CardBase();

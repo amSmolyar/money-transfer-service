@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class ConfirmResponse {
     @Pattern(regexp = "(\\d+)")
-    private String operationId;
+    private final String operationId;
 
     @JsonCreator
     public ConfirmResponse(String operationId) {

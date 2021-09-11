@@ -1,7 +1,7 @@
 package ru.netology.demo.exceptions;
 
 public class CardNotFoundException extends RuntimeException {
-    private int id;
+    private final int id;
 
     public CardNotFoundException(String msg) {
         super(msg);

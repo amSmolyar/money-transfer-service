@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-alpine
+VOLUME /log
 EXPOSE 5500
 ADD CardDataBase.txt .
 ADD TestCardDataBase.txt .

@@ -1,7 +1,7 @@
 package ru.netology.demo.exceptions;
 
 public class InsufficientFundsException extends RuntimeException {
-    private int id;
+    private final int id;
 
     public InsufficientFundsException(String msg) {
         super(msg);

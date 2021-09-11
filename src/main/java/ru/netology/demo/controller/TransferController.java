@@ -14,7 +14,7 @@ import javax.validation.Valid;
 @RestController
 @Validated
 public class TransferController {
-    private TransferService transferService;
+    private final TransferService transferService;
 
     public TransferController(TransferService transferService) {
         this.transferService = transferService;

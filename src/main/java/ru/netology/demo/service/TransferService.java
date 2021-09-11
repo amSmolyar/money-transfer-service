@@ -13,10 +13,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class TransferService {
-    private CardRepository cardRepository;
+    private final CardRepository cardRepository;
 
-    private AtomicInteger operationIdInt;
-    private ConcurrentHashMap<String, Transaction> operationMap;
+    private final AtomicInteger operationIdInt;
+    private final ConcurrentHashMap<String, Transaction> operationMap;
 
     public TransferService(CardRepository cardRepository) {
         this.cardRepository = cardRepository;

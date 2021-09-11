@@ -5,10 +5,10 @@ import javax.validation.constraints.Pattern;
 
 public class ConfirmParameters {
     @Pattern(regexp = "(\\d+)")
-    private String operationId;
+    private final String operationId;
 
     @Pattern(regexp = "(\\d+)")
-    private String code;
+    private final String code;
 
     public @Valid  ConfirmParameters(String operationId, String code) {
 
